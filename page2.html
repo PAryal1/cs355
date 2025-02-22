@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <toggle id="toggle"> Dark </toggle>
+    <center>
+        <h3>Details:</h3>
+      <div class="field-container">
+        <div class="field">Username: <span id="username"></span><br /></div>
+        <div class="field">ID: <span id="userId"></span> <br /></div>
+        <div class="field">Password: <span id="password"></span><br /></div>
+      </div>
+      <script src="script.js"></script>
+      <script>
+        const params = new URLSearchParams(location.search);
+        const getUsername = params.get("username");
+        const getId = params.get("userId");
+        const getPassword = params.get("password");
+
+        const username = document.getElementById("username");
+        username.innerText = getUsername;
+
+        const password = document.getElementById("password");
+        password.innerText = getPassword;
+
+        const userId = document.getElementById("userId");
+        userId.innerText = getId;
+      </script>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+:root {
+  --bg-color: white;
+  --txt-color: black;
+  --bg-color2: green;
+  --border-color: black;
+}
+
+:root[theme="dark"] {
+  --bg-color: #333;
+  --bg-color2: #abb;
+  --txt-color: #eee;
+  --border-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15pt;
+}
+
+.ID {
+  margin: 1em;
+  position: fixed;
+  padding: 1em;
+}
+
+toggle {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+toggle:hover {
+  background-color: greenyellow;
+  color: var(--txt-color);
+  cursor: pointer;
+}
+
+input {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15pt;
+  margin: 2rem;
+  border: 1px solid;
+  border-color: var(--border-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+}
+.form {
+  border: 2px solid;
+  border-radius: 5%;
+  border-color: var(--border-color);
+  width: 400px;
+}
+.button {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.button:hover{
+  background-color: rgb(112, 196, 252);
+  transition: 1s;
+}
+.field{
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-radius: 15px;
+}
+.field-container{
+width: 400px;
+
+}
